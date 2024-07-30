@@ -16,7 +16,10 @@ body {
   align-items: center;
   padding: 8px 16px;
   box-sizing: border-box;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
   font-family: Verdana, sans-serif;
 }
 
@@ -32,7 +35,6 @@ body {
   display: flex;
   justify-content: flex-end;
   gap: 10px;
-  flex: 1;
 }
 .Header a:hover {
   background-color: rgba(145, 145, 145, 0.466);
@@ -43,9 +45,67 @@ body {
   z-index: 1;
   justify-content: center;
   position: relative;
+  width: 100%;
 }
 
 .Header_wrapper .Header_img img {
-  width: 1500px;
-  height: 800px;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.Header_wrapper .img_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-family: Verdana, sans-serif;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.Header_wrapper .img_text b {
+  background-color: rgba(0, 0, 0, 0.604);
+  padding: 10px;
+}
+.Header_wrapper .img_text p {
+  padding: 10px;
+}
+
+/* Project */
+.Projects {
+  width: 100%;
+  height: auto;
+  padding-top: 32px;
+  display: block;
+}
+
+.Projects a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  font-weight: 400;
+  border-bottom: 1px solid rgb(225, 225, 225);
+  padding-bottom: 16px;
+  display: block;
+  margin-bottom: 32px;
+}
+
+.img-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.prj-container {
+  width: calc(25% - 16px);
+  margin-bottom: 16px;
+}
+
+.prj-container img {
+  height: auto;
+  width: 100%;
 }
