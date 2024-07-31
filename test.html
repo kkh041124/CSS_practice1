@@ -9,18 +9,18 @@
   </head>
   <body>
     <header class="Header">
-      <a id="Home" href="#Home">
+      <a href="#Home">
         <b>BR</b>
         Architects
       </a>
       <div class="Header_text">
         <a href="#Projects">Projects</a>
         <a href="#About">About</a>
-        <a id="Contact" href="#Contact">Contact</a>
+        <a href="#Contact">Contact</a>
       </div>
     </header>
     <main>
-      <div class="Header_wrapper">
+      <div id="Home" class="Header_wrapper">
         <div class="Header_img">
           <img src="./asset/architect.jpg" alt="Architectural Image" />
         </div>
@@ -124,6 +124,54 @@
           </div>
         </div>
       </div>
+      <div id="Contact" class="Contact">
+        <a>Contact</a>
+        <p>Let's get in touch and talk about your next project.</p>
+        <form id="contactForm" onsubmit="return checkField()">
+          <input type="text" placeholder="Name" name="Name" />
+          <input type="email" placeholder="Email" name="Email" />
+          <input type="text" placeholder="Subject" name="Subject" />
+          <input type="text" placeholder="Content" name="Content" />
+          <button type="submit">
+            <i class="fa fa-paper-plane"></i>SEND MESSAGE
+          </button>
+        </form>
+      </div>
+      <div class="footer"><img src="./asset/map.jpg" /></div>
     </main>
+    <script>
+      function checkField() {
+        let form = document.forms["contactForm"];
+        let name = form["Name"].value.trim();
+        let email = form["Email"].value.trim();
+        let subject = form["Subject"].value.trim();
+        let content = form["Content"].value.trim();
+
+        if (!name) {
+          alert("Name을 입력하세요.");
+          return false;
+        }
+        if (!email) {
+          alert("Email을 입력하세요.");
+          return false;
+        }
+        if (!subject) {
+          alert("Subject를 입력하세요.");
+          return false;
+        }
+        if (!content) {
+          alert("Content를 입력하세요.");
+          return false;
+        }
+
+        return true;
+      }
+    </script>
   </body>
+  <footer>
+    <p>
+      Powered by
+      <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a>
+    </p>
+  </footer>
 </html>
