@@ -288,11 +288,7 @@ input:invalid {
   scroll-margin-top: 72px; /* 섹션이 스크롤될 때 상단 여백 설정 */
 }
 
-footer {
-}
-
-footer a,
-p {
+footer .text {
   margin-top: 8px;
   background-color: black;
   text-align: center;
