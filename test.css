@@ -43,7 +43,7 @@ header a:hover {
 }
 
 main {
-  max-width: 1400px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -105,6 +105,8 @@ main {
   padding-bottom: 16px;
   display: block;
   margin-bottom: 32px;
+
+  font-family: Verdana, sans-serif;
 }
 
 .img-row {
@@ -116,9 +118,96 @@ main {
 .prj-container {
   width: calc(25% - 16px);
   margin-bottom: 16px;
+  position: relative;
 }
 
 .prj-container img {
   height: auto;
   width: 100%;
+}
+
+.prj-container p {
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: 0;
+  width: auto;
+  padding: 8px 16px;
+}
+
+/*About*/
+.About {
+  width: 100%;
+  height: auto;
+  padding-top: 32px;
+  display: block;
+}
+
+.About .ab_description {
+  color: black;
+  font-size: 15px;
+  line-height: 1.5;
+  font-family: Verdana, sans-serif;
+
+  margin: 15px 0px;
+}
+
+.About a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  font-weight: 400;
+  border-bottom: 1px solid rgb(225, 225, 225);
+  padding-bottom: 16px;
+  display: block;
+  margin-bottom: 32px;
+
+  font-family: Verdana, sans-serif;
+
+  word-wrap: break-word;
+}
+
+.About .about_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.About .about_container {
+  width: calc(25% - 16px);
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.About .about_container img {
+  width: 100%;
+  height: auto;
+
+  filter: grayscale(75%);
+}
+
+.About .about_container h3 {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.About .about_container p {
+  margin: 15px auto;
+}
+
+.About .about_container .job {
+  color: gray;
+}
+
+.About .about_container .abount_btn {
+  background-color: #f1f1f1 !important;
+  text-align: center;
+  padding: 8px 16px;
+}
+.About .about_container .abount_btn:hover {
+  background-color: #c6c6c6 !important;
+  text-align: center;
+  padding: 8px 16px;
 }
